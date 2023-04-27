@@ -1,0 +1,26 @@
+---
+const links = [
+  {
+    name: "rsvp",
+  },
+  {
+    name: "details",
+  },
+  {
+    name: "travel",
+  },
+  {
+    name: "registry",
+  },
+];
+---
+
+<div
+  class="flex w-16 flex-col items-center justify-between bg-nav py-6 align-middle"
+>
+  <span class="">08</span>
+  <div class="flex flex-col justify-between gap-20">
+    {links.map((link) => <a class="uppercase -rotate-90" href={`#${link.name}`}>{link.name}</a>)}
+  </div>
+  <span>26</span>
+</div>

@@ -1,0 +1,40 @@
+.header-text {
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 104.72px;
+  letter-spacing: -5%;
+}
+
+.little-text {
+  font-family: 'tablet-gothic-wide', 'sans-serif';
+  font-size: 12px;
+  line-height: 20px;
+  color: #313632;
+  text-transform: uppercase;
+  text-decoration-color: #AAB1AA;
+  text-underline-offset: 6px;
+}
+
+@supports (-webkit-text-stroke: 1.2px #C3C9C5) {
+  h1.font-mack {
+    -webkit-text-stroke: 2.5px #C3C9C5;
+    -webkit-text-fill-color: #313632;
+    letter-spacing: -4.5px;
+    line-height: 100px;
+  }
+  h1.font-mack span.tester, h1.font-mack span span.tester {
+    -webkit-text-stroke: initial;
+    -webkit-text-fill-color: initial;
+    /* font-variant-ligatures: contextual; <contextual-alt-values> */
+  }
+}
+
+/* .test {
+  border: 1.2px solid #C3C9C5;
+} */
+
+span.tester {
+  font-family: 'BellissimaScriptPro';
+  font-size: 116px;
+  font-feature-settings: "clig" 1, "calt" 1;
+}
