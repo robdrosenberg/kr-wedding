@@ -1,3 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+@supports (scroll-snap-align: start) {
+  .scroll-container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+
+  /* article {
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 15vh;
+    overflow-y: scroll;
+  } */
+}
+
+.h1-desk {
+  -webkit-text-stroke: 2.5px #c3c9c5;
+  -webkit-text-fill-color: #313632;
+  letter-spacing: -4.5px;
+  line-height: 100px;
+  font-size: 88px;
+}
+.h1-accent {
+  -webkit-text-stroke: initial;
+  -webkit-text-fill-color: initial;
+  font-feature-settings: "clig" 1, "calt" 1;
+}
+
 .header-text {
   font-size: 88px;
   font-weight: 400;
@@ -5,24 +43,39 @@
   letter-spacing: -5%;
 }
 
-.little-text {
-  font-family: 'tablet-gothic-wide', 'sans-serif';
+.b1 {
+  font-family: "tablet-gothic-wide", "sans-serif";
   font-size: 12px;
   line-height: 20px;
   color: #313632;
   text-transform: uppercase;
-  text-decoration-color: #AAB1AA;
+  text-decoration-color: #aab1aa;
   text-underline-offset: 6px;
 }
 
-@supports (-webkit-text-stroke: 1.2px #C3C9C5) {
+.b2 {
+  /* font-family: 'p22-mackinac-pro', 'sans-serif'; */
+  font-family: "P22 Mackinac Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #313632;
+
+  /* identical to box height, or 150% */
+
+  font-feature-settings: "salt" on;
+}
+
+@supports (-webkit-text-stroke: 1.2px #c3c9c5) {
   h1.font-mack {
-    -webkit-text-stroke: 2.5px #C3C9C5;
+    -webkit-text-stroke: 2.5px #c3c9c5;
     -webkit-text-fill-color: #313632;
     letter-spacing: -4.5px;
     line-height: 100px;
   }
-  h1.font-mack span.tester, h1.font-mack span span.tester {
+  h1.font-mack span.tester,
+  h1.font-mack span span.tester {
     -webkit-text-stroke: initial;
     -webkit-text-fill-color: initial;
     /* font-variant-ligatures: contextual; <contextual-alt-values> */
@@ -34,7 +87,11 @@
 } */
 
 span.tester {
-  font-family: 'BellissimaScriptPro';
+  font-family: "BellissimaScriptPro";
   font-size: 116px;
   font-feature-settings: "clig" 1, "calt" 1;
+}
+
+.text-test {
+  font-family: "tablet-gothic-wide", "sans-serif";
 }

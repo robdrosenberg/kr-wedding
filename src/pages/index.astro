@@ -1,11 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import Details from "../components/Details.astro";
 import '../styles/styles.css'
 import KRLogo from '../components/KRLogo.astro'
 ---
 
 <MainLayout title="Home">
-  <div class="mx-16 mt-14 flex justify-between w-full">
+  <div class="section">
+    <Hero />
+  </div>
+  <div class="section">
+    <Details />
+  </div>
+  <!-- <div class="mx-16 mt-14 flex justify-between">
     <div class="">
       <h1 class="text-[88px] text-darkest uppercase font-mack font-normal align-middle">
         <span class="font-bell text-[116px] mr-4 tester">A</span>ugust 26, 2023
@@ -15,25 +23,17 @@ import KRLogo from '../components/KRLogo.astro'
         </span>
         <br>
         Issaquah, WA
-        
       </h1>
-      <!-- <h3 class="absolute uppercase text-xs top-[34%] left-[50%] text-right">
-        on a saturday
-        <br>
-        by the river
-        <br>
-        in the Pacific Northwest
-      </h3> -->
       <img class="mt-20" src="/images/hero-image.png" alt="a collage of Robert and Kristina pictures">
     </div>
     <div class="">
       <div>
         <KRLogo class="ml-auto" />
       </div>
-      <div class="text-right mt-14 little-text">
+      <div class="text-right mt-14 b1">
         <a href="#rsvp" class="underline">RSVP</a>
       </div>
-      <div class="little-text mt-16">
+      <div class="b1 mt-16">
         <p>Kristina Helena Matuška</p>
         <p class="ml-10">Robert Daniel Rosenberg</p>
       </div>
@@ -41,5 +41,5 @@ import KRLogo from '../components/KRLogo.astro'
         <img class="w-48 h-48" src="/images/polaroid-1-opt.png" alt="Kristina showing her ring off with Robert">
       </div>
     </div>
-  </div>
+  </div> -->
 </MainLayout>
