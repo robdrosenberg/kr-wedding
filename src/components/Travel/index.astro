@@ -1,0 +1,19 @@
+---
+import BgText from "./BgText.astro";
+import BottomContent from "./BottomContent.astro";
+import TopContent from "./TopContent.astro";
+---
+
+<section
+  class="section relative grid h-screen grid-cols-12 pl-5 md:pl-0"
+  id="travel"
+>
+  <TopContent />
+  <BottomContent />
+  <BgText />
+  <img
+    src="/images/travel/center-image.jpg"
+    alt="Kristina and Rob leaning against a historic building."
+    class="absolute left-1/2 right-1/2 z-0 h-screen w-[33vw] -translate-x-1/2 bg-bottom object-cover"
+  />
+</section>
