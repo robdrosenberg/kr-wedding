@@ -1,34 +1,49 @@
 ---
-import '../styles/styles.css'
-import KRLogo from '../components/KRLogo.astro'
+import "../styles/styles.css";
+import KRLogo from "../components/KRLogo.astro";
 ---
 
-<div class="mx-16 pt-14 flex justify-between section" id="home">
+<div
+  class="section mx-16 flex flex-col-reverse justify-between pt-14 md:flex-row"
+  id="home"
+>
   <div class="">
-    <h1 class="text-[88px] text-darkest uppercase font-mack font-normal align-middle">
-      <span class="font-bell text-[116px] mr-4 tester">A</span>ugust 26, 2023
-      <br>
+    <h1
+      class="align-middle font-mack text-[88px] font-normal uppercase text-darkest"
+    >
+      <span class="tester mr-4 font-bell text-[116px]">A</span>ugust 26, 2023
+      <br />
       <span class="ml-[163px]">
-        <span class="text-[116px] mr-4 tester lowercase">at</span> The Rivers Edge
+        <span class="tester mr-4 text-[116px] lowercase">at</span> The Rivers Edge
       </span>
-      <br>
+      <br />
       Issaquah, WA
     </h1>
-    <img class="mt-20" src="/images/hero-image.png" alt="a collage of Robert and Kristina pictures">
+    <img
+      class="mt-20"
+      src="/images/hero-image.png"
+      alt="a collage of Robert and Kristina pictures"
+    />
   </div>
   <div class="">
     <div>
       <KRLogo class="ml-auto" />
     </div>
-    <div class="text-right mt-14 b1">
+    <div class="b1 mt-14 text-right">
       <a href="#rsvp" class="underline">RSVP</a>
     </div>
     <div class="b1 mt-16">
       <p>Kristina Helena Matuška</p>
       <p class="ml-10">Robert Daniel Rosenberg</p>
     </div>
-    <div class="pt-2 px-[6px] pb-12 bg-polaroid shadow-polaroid mt-32">
-      <img class="w-48 h-48" src="/images/polaroid-1-opt.png" alt="Kristina showing her ring off with Robert">
+    <div
+      class="mt-32 hidden bg-polaroid px-[6px] pb-12 pt-2 shadow-polaroid md:block"
+    >
+      <img
+        class="h-48 w-48"
+        src="/images/polaroid-1-opt.png"
+        alt="Kristina showing her ring off with Robert"
+      />
     </div>
   </div>
 </div>

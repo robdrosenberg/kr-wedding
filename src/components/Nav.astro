@@ -16,11 +16,17 @@ const links = [
 ---
 
 <div
-  class="h-full fixed left-0 top-0 overflow-x-hidden flex w-16 flex-col items-center justify-between bg-nav py-6 align-middle"
+  class="fixed left-0 top-0 hidden h-full w-16 flex-col items-center justify-between overflow-x-hidden bg-nav py-6 align-middle md:flex"
 >
   <span class="b2">08</span>
   <div class="b1 flex flex-col justify-between gap-20">
-    {links.map((link) => <a class="uppercase -rotate-90" href={`#${link.name}`}>{link.name}</a>)}
+    {
+      links.map((link) => (
+        <a class="-rotate-90 uppercase" href={`#${link.name}`}>
+          {link.name}
+        </a>
+      ))
+    }
   </div>
   <span class="b2">26</span>
 </div>

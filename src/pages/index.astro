@@ -1,17 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/Hero.astro";
-import Details from "../components/Details.astro";
-import '../styles/styles.css'
-import KRLogo from '../components/KRLogo.astro'
+import Details from "../components/Details/index.astro";
+import "../styles/styles.css";
+import KRLogo from "../components/KRLogo.astro";
 ---
 
 <MainLayout title="Home">
-  <div class="section">
-    <Hero />
-  </div>
-  <div class="section">
-    <Details />
+  <div class="">
+    <!-- <div class="section">
+      <Hero />
+    </div> -->
+    <div class="section">
+      <Details />
+    </div>
   </div>
   <!-- <div class="mx-16 mt-14 flex justify-between">
     <div class="">
