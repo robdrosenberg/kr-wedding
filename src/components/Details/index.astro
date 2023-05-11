@@ -1,4 +1,5 @@
 ---
+import KRLogo from "../KRLogo.astro";
 import BgText from "./BgText.astro";
 import MobileTopText from "./MobileTopText.astro";
 import Location from "./Location.astro";
@@ -6,6 +7,21 @@ import Schedule from "./Schedule.astro";
 ---
 
 <section class="section relative grid grid-cols-12 pl-5 md:pl-0" id="details">
+  <div
+    class="z-40 col-span-12 flex w-full justify-between gap-5 py-5 pr-5 md:hidden md:px-5"
+  >
+    <KRLogo />
+    <a
+      href="#rvsp"
+      class="text-sm uppercase underline decoration-green-dark underline-offset-8"
+      >RVSP</a
+    >
+    <button
+      class="h-min text-sm uppercase underline decoration-green-dark underline-offset-8"
+    >
+      Menu
+    </button>
+  </div>
   <BgText />
   <MobileTopText />
   <Location />
