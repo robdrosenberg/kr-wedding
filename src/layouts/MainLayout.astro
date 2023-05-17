@@ -10,6 +10,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="stylesheet" href="https://use.typekit.net/dpz4njr.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>{title}</title>
   </head>
   <body class="bg-primary">
@@ -19,6 +20,27 @@ const { title } = Astro.props;
         <slot />
       </div>
     </div>
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init();
+    </script>
   </body>
   <!-- <footer>Foot</footer> -->
 </html>
+
+<script>
+  //AOS FIX FOR SNAP SCROLL, CURRENTLY NOT WORKING
+  // const aosAnimation = document.querySelectorAll("[data-aos]");
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.intersectionRatio > 0) {
+  //       entry.target.classList.add("aos-animate");
+  //     } else {
+  //       entry.target.classList.remove("aos-animate");
+  //     }
+  //   });
+  // });
+  // aosAnimation.forEach((aosObject) => {
+  //   observer.observe(aosObject);
+  // });
+</script>
