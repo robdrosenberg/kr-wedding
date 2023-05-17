@@ -1,0 +1,20 @@
+---
+import Heading from "./Heading.astro";
+import MobileTopText from "./MobileTopText.astro";
+import Collage from "./Collage.astro";
+import Polaroid from "./Polaroid.astro";
+---
+
+<header>
+  <div
+    class="section relative flex flex-col px-5 py-14 sm:mx-16 md:grid md:grid-cols-12"
+    id="home"
+  >
+    <MobileTopText />
+    <Heading />
+
+    <Collage />
+
+    <Polaroid />
+  </div>
+</header>
