@@ -2,15 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Register your custom font family and tell the browser where to find it. */
-@font-face {
-  font-family: 'Bellisima Script Pro';
-  src: url('/fonts/BellissimaScriptPro.otf') format('opentype');
-  /* font-weight: normal;
-  font-style: normal;
-  font-display: swap; */
-}
-
 @supports (scroll-snap-align: start) {
   .scroll-container {
     scroll-snap-type: y mandatory;
