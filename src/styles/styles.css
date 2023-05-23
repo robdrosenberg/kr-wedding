@@ -118,3 +118,14 @@ span.tester {
 .text-test {
   font-family: "tablet-gothic-wide", "sans-serif";
 }
+
+/* SCROLL ANIMATIONS */
+
+.origin-hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.origin-show {
+  opacity: 1;
+}

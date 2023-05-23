@@ -6,9 +6,11 @@ import Location from "./Location.astro";
 import Schedule from "./Schedule.astro";
 ---
 
-<section class="section relative grid grid-cols-12 pl-5 md:pl-0" id="details">
-  <BgText />
-  <MobileTopText />
-  <Location />
-  <Schedule />
+<section class="section relative pl-5 md:pl-0" id="details">
+  <div class="relative grid h-full grid-cols-12 md:max-h-[1080px]">
+    <BgText />
+    <MobileTopText />
+    <Location />
+    <Schedule />
+  </div>
 </section>

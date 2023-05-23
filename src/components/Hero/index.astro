@@ -5,16 +5,18 @@ import Collage from "./Collage.astro";
 import Polaroid from "./Polaroid.astro";
 ---
 
-<header>
-  <div
-    class="section relative flex flex-col px-5 py-14 sm:mx-16 md:grid md:grid-cols-12"
-    id="home"
-  >
-    <MobileTopText />
-    <Heading />
+<header class="">
+  <div class="md:h-screen">
+    <div
+      class="section relative my-auto flex flex-col px-5 py-14 md:mx-16 md:grid md:max-h-[1080px] md:grid-cols-12"
+      id="home"
+    >
+      <MobileTopText />
+      <Heading />
 
-    <Collage />
+      <Collage />
 
-    <Polaroid />
+      <Polaroid />
+    </div>
   </div>
 </header>

@@ -7,23 +7,25 @@ import MobileTopText from "./MobileTopText.astro";
 ---
 
 <section
-  class="section relative grid grid-cols-12 py-10 pl-5 md:h-screen md:py-0 md:pl-0"
+  class="section relative py-10 pl-5 md:h-screen md:py-0 md:pl-0"
   id="travel"
 >
-  <MobileTopText />
-  <BgText />
-  <TopContent />
-  <BottomContent />
+  <div class="relative grid h-full grid-cols-12 md:max-h-[1080px]">
+    <MobileTopText />
+    <BgText />
+    <TopContent />
+    <BottomContent />
 
-  <img
-    src="/images/travel/center-image.jpg"
-    alt="Kristina and Rob leaning against a historic building."
-    class="absolute z-0 hidden h-auto w-[66px] -translate-x-1/2 bg-bottom object-cover md:left-1/2 md:right-1/2 md:block md:h-screen md:w-[33vw]"
-  />
+    <img
+      src="/images/travel/center-image.jpg"
+      alt="Kristina and Rob leaning against a historic building."
+      class="absolute z-0 hidden h-auto w-[66px] -translate-x-1/2 bg-bottom object-cover md:left-1/2 md:right-1/2 md:block md:h-screen md:w-[33vw]"
+    />
 
-  <img
-    src="/images/travel/mobile-top-image.jpg"
-    alt="Kristina and Rob leaning against a historic building."
-    class="absolute right-5 top-64 block h-auto w-[66px] md:hidden"
-  />
+    <img
+      src="/images/travel/mobile-top-image.jpg"
+      alt="Kristina and Rob leaning against a historic building."
+      class="absolute right-5 top-64 block h-auto w-[66px] md:hidden"
+    />
+  </div>
 </section>
