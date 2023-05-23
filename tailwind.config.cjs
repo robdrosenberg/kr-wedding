@@ -18,7 +18,7 @@ module.exports = {
         green: "#B7BDB8",
       },
       fontFamily: {
-        bell: ["BellissimaScriptPro", "cursive"],
+        bell: ["'Bellissima Script Pro'", "cursive"],
         mack: ["p22-mackinac-pro", "serif"],
         "gothic-w": ["tablet-gothic-wide", "sans-serif"],
       },
