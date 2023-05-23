@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'bellissima_script_proregular';
+  src: url('/fonts/bellissimascriptpro-webfont.woff2') format('woff2'),
+       url('/fonts/bellissimascriptpro-webfont.woff') format('woff'),
+       url('/fonts/bellissimascriptpro-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 @supports (scroll-snap-align: start) {
   .scroll-container {
     scroll-snap-type: y mandatory;
