@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "bellissima_script_proregular";
+  src: url("/fonts/bellissimascriptpro-webfont.woff2") format("woff2"),
+    url("/fonts/bellissimascriptpro-webfont.woff") format("woff"),
+    url("/fonts/bellissimascriptpro-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @supports (scroll-snap-align: start) {
   .scroll-container {
     scroll-snap-type: y mandatory;
@@ -50,6 +59,16 @@ html {
     letter-spacing: -4.5px;
     line-height: 100px;
     font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .h1-desk {
+    -webkit-text-stroke: 1px #c3c9c5;
+    -webkit-text-fill-color: #313632;
+    letter-spacing: -4.5px;
+    line-height: 100px;
+    font-size: 36px;
   }
 }
 
