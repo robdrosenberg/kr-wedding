@@ -52,6 +52,13 @@ html {
   /* font-size: 88px; */
 }
 
+.rsvp-text {
+  -webkit-text-stroke: 1.25px #FFFFFF;
+  -webkit-text-fill-color: #313632;
+  letter-spacing: -4.5px;
+  /* line-height: 100px; */
+}
+
 @media only screen and (max-width: 768px) {
   .h1-desk {
     -webkit-text-stroke: 1px #c3c9c5;

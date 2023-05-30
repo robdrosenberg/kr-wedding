@@ -1,11 +1,28 @@
-<div class="w-[40vw] bg-green">
-  <div class="h-[50vh] w-full bg-white pr-5 shadow-polaroid">
+---
+import ArrowIcon from '../../ArrowIcon.astro';
+---
+
+<div class="w-full lg:w-[40vw] bg-green">
+  <div class="h-[65vh] lg:h-[50vh] lg:mt-[72px] bg-white pr-5 shadow-polaroid">
     <img
       src="/images/register/walking-lg.jpg"
       alt="Kristina and Rob holding hands while walking."
       class="block w-full lg:hidden"
     />
-    <div class="">form</div>
+    <div class="mx-7 lg:hidden">
+      <p class="b2 my-6 ml-4">Please let us know your plans by August 1, 2023. 
+        <br>
+        We hope to celebrate together!</p>
+      <a href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp" class="font-mack text-[42px] lg:text-[44px] flex items-center rsvp-text justify-center">Send 
+        <span class="mx-8"><ArrowIcon /></span>RSVP</a>
+    </div>
+    <div class="lg:px-7 h-full hidden lg:flex flex-col justify-center">
+      <a href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp" class="font-mack text-[42px] lg:text-[44px] flex items-center rsvp-text justify-center">Send 
+        <span class="mx-8"><ArrowIcon /></span>RSVP</a>
+      <p class="b2 mx-2">Please let us know your plans by August 1, 2023. 
+        <br>
+        We hope to celebrate together!</p>
+    </div>
   </div>
   <img
     src="/images/register/leaves.jpg"
