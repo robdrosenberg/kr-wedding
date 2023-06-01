@@ -39,18 +39,6 @@ const { title } = Astro.props;
 </style>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        console.log(i);
-        entry.target.classList.add("origin-show");
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll(".origin-hidden");
-  hiddenElements.forEach((el) => observer.observe(el));
-
   //AOS FIX FOR SNAP SCROLL, CURRENTLY NOT WORKING
   // const aosAnimation = document.querySelectorAll("[data-aos]");
   // const observer = new IntersectionObserver((entries) => {

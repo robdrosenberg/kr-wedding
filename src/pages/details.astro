@@ -1,0 +1,37 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MobileNav from "../components/MobileNav.svelte";
+
+import Details from "../components/Details/index.astro";
+
+import "../styles/styles.css";
+import KRLogo from "../components/KRLogo.astro";
+---
+
+<head>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+  />
+</head>
+<MainLayout title="Details">
+  <div class="relative flex flex-col">
+    <div
+      class="fixed right-16 top-16 z-40 hidden flex-col items-end gap-12 md:flex"
+      data-aos="fade-left"
+      data-aos-duration="500"
+    >
+      <KRLogo />
+      <a
+        href="#rvsp"
+        class="text-sm underline decoration-green-dark underline-offset-8"
+        >RVSP</a
+      >
+    </div>
+
+    <div class="mx-auto w-full max-w-[1920px]">
+      <MobileNav client:load />
+      <Details />
+    </div>
+  </div>
+</MainLayout>

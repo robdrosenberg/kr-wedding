@@ -13,19 +13,17 @@
       class="mt-32 font-mack text-4xl h-[40vh] flex flex-col justify-between mb-10"
     >
       <li>
-        <a href="#home" on:click={toggle} class="h1-desk text-4xl">
-          DATE/TIME</a
+        <a href="/" on:click={toggle} class="h1-desk text-4xl"> DATE/TIME</a>
+      </li>
+      <li>
+        <a href="/details" on:click={toggle} class="h1-desk text-4xl">DETAILS</a
         >
       </li>
       <li>
-        <a href="#details" on:click={toggle} class="h1-desk text-4xl">DETAILS</a
-        >
+        <a href="/travel" on:click={toggle} class="h1-desk text-4xl"> TRAVEL</a>
       </li>
       <li>
-        <a href="#travel" on:click={toggle} class="h1-desk text-4xl"> TRAVEL</a>
-      </li>
-      <li>
-        <a href="#register" on:click={toggle} class="h1-desk text-4xl">
+        <a href="/register" on:click={toggle} class="h1-desk text-4xl">
           REGISTRY/RVSP</a
         >
       </li>

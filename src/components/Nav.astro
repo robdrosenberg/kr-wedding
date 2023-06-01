@@ -2,27 +2,33 @@
 const links = [
   {
     name: "home",
+    slug: "/",
   },
   {
     name: "details",
+    slug: "/details",
   },
   {
     name: "travel",
+    slug: "/travel",
   },
   {
     name: "registry",
+    slug: "/register",
   },
 ];
 ---
 
 <div
   class="fixed left-0 top-0 hidden h-full w-16 flex-col items-center justify-between overflow-x-hidden bg-nav py-6 align-middle md:flex"
+  data-aos="fade-right"
+  data-aos-duration="500"
 >
   <span class="b2">08</span>
   <div class="b1 flex flex-col justify-between gap-20">
     {
       links.map((link) => (
-        <a class="-rotate-90 uppercase" href={`#${link.name}`}>
+        <a class="-rotate-90 uppercase" href={`${link.slug}`}>
           {link.name}
         </a>
       ))
