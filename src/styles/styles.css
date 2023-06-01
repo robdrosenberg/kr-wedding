@@ -145,6 +145,11 @@ span.tester {
   font-family: "tablet-gothic-wide", "sans-serif";
 }
 
+a.-rotate-90.uppercase:last-child{
+  margin-top: 50px;
+  white-space: nowrap;
+}
+
 /* SCROLL ANIMATIONS */
 
 .origin-hidden {
