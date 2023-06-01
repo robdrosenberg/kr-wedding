@@ -31,7 +31,7 @@
   </svg>
   {#if !openMenu}
     <a
-      href="#rvsp"
+      href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp"
       class="text-sm uppercase underline decoration-green-dark underline-offset-8"
       transition:fade>RVSP</a
     >
