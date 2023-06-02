@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import MobileNav from "../components/MobileNav.svelte";
+import MobileFooterNav from "../components/MobileFooterNav.astro";
 
 import Travel from "../components/Travel/index.astro";
 
@@ -34,4 +35,9 @@ import KRLogo from "../components/KRLogo.astro";
       <Travel />
     </div>
   </div>
+  <MobileFooterNav
+    text="REGISTRY/RSVP"
+    link="/register"
+    bg="/public/images/travel/travel-mobile-nav-bg.jpg"
+  />
 </MainLayout>

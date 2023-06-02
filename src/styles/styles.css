@@ -52,6 +52,14 @@ html {
   /* font-size: 88px; */
 }
 
+.h1-desk-white {
+  -webkit-text-stroke: 2.5px #c3c9c5;
+  -webkit-text-fill-color: #313632;
+  letter-spacing: -4.5px;
+  line-height: 100px;
+  /* font-size: 88px; */
+}
+
 .rsvp-text {
   -webkit-text-stroke: 1.25px #ffffff;
   -webkit-text-fill-color: #313632;
@@ -145,7 +153,7 @@ span.tester {
   font-family: "tablet-gothic-wide", "sans-serif";
 }
 
-a.-rotate-90.uppercase:last-child{
+a.-rotate-90.uppercase:last-child {
   margin-top: 50px;
   white-space: nowrap;
 }
