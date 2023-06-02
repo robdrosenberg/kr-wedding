@@ -8,6 +8,8 @@ import Travel from "../components/Travel/index.astro";
 import Register from "../components/Register/index.astro";
 import "../styles/styles.css";
 import KRLogo from "../components/KRLogo.astro";
+
+import { Analytics } from '@vercel/analytics/react';
 ---
 
 <head>
@@ -16,7 +18,7 @@ import KRLogo from "../components/KRLogo.astro";
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
   />
 </head>
-<MainLayout title="Home">
+< title="Home">
   <div class="relative flex flex-col">
     <div
       class="fixed right-16 top-16 z-40 hidden flex-col items-end gap-12 md:flex"
@@ -65,4 +67,5 @@ import KRLogo from "../components/KRLogo.astro";
       </div>
     </div>
   </div> -->
+  <Analytics />
 </MainLayout>
