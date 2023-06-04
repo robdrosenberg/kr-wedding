@@ -47,15 +47,30 @@ html {
 .h1-desk {
   -webkit-text-stroke: 2.5px #c3c9c5;
   -webkit-text-fill-color: #313632;
-  letter-spacing: -4.5px;
+  letter-spacing: -3px;
   line-height: 100px;
   /* font-size: 88px; */
+}
+
+.h1-mobile-nav {
+  font-size: 40px;
+  letter-spacing: -1px;
+  -webkit-text-stroke: 1px #B8BDB8;
+  -webkit-text-fill-color: #313632;
 }
 
 .rsvp-text {
   -webkit-text-stroke: 1.25px #ffffff;
   -webkit-text-fill-color: #313632;
   letter-spacing: 2%;
+  /* line-height: 100px; */
+}
+
+.registry-text {
+  -webkit-text-stroke: .5px #AAB1AA;
+  -webkit-text-fill-color: #313632;
+  font-size: 28px;
+  /* letter-spacing: 2%; */
   /* line-height: 100px; */
 }
 
@@ -69,7 +84,7 @@ html {
   .h1-desk {
     -webkit-text-stroke: 1px #c3c9c5;
     -webkit-text-fill-color: #313632;
-    letter-spacing: -4.5px;
+    letter-spacing: -3px;
     line-height: 100px;
     font-size: 42px;
   }
@@ -98,6 +113,13 @@ html {
   letter-spacing: -5%;
 }
 
+.h3-kika {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-text-stroke: 0.3px #ffffff;
+  -webkit-text-fill-color: #313632;
+}
+
 .b1 {
   font-family: "tablet-gothic-wide", "sans-serif";
   font-size: 12px;
@@ -113,7 +135,7 @@ html {
   font-family: "p22-mackinac-pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #313632;
 
