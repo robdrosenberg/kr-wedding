@@ -1,5 +1,6 @@
 <script>
   import MobileMenu from "./MobileMenu.svelte";
+  import CloseIcon from "../components/CloseIcon.svelte"
   import { fade } from "svelte/transition";
 
   let openMenu = false;
@@ -37,9 +38,14 @@
     >
   {/if}
   <button
-    class="h-min text-sm uppercase underline decoration-green-dark underline-offset-8"
+    class="h-min text-sm uppercase underline decoration-green-dark underline-offset-8 flex gap-2 items-center"
     on:click={toggle}
   >
-    Menu
+    {#if openMenu}
+      CLOSE
+      <CloseIcon />
+    {:else}
+      MENU
+    {/if}
   </button>
 </div>
