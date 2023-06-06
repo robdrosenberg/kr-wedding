@@ -2,6 +2,7 @@
   import { fade } from "svelte/transition";
   export let openMenu;
   export let toggle;
+
 </script>
 
 {#if openMenu}
@@ -13,17 +14,17 @@
       class="mt-32 font-mack text-4xl h-[40vh] flex flex-col justify-between mb-10"
     >
       <li>
-        <a href="/" on:click={toggle} class="h1-desk text-4xl"> DATE/TIME</a>
+        <a href="/" on:click={toggle} class="h1-mobile-nav"> DATE/TIME</a>
       </li>
       <li>
-        <a href="/details" on:click={toggle} class="h1-desk text-4xl">DETAILS</a
+        <a href="/details" on:click={toggle} class="h1-mobile-nav">DETAILS</a
         >
       </li>
       <li>
-        <a href="/travel" on:click={toggle} class="h1-desk text-4xl"> TRAVEL</a>
+        <a href="/travel" on:click={toggle} class="h1-mobile-nav"> TRAVEL</a>
       </li>
       <li>
-        <a href="/register" on:click={toggle} class="h1-desk text-4xl">
+        <a href="/register" on:click={toggle} class="h1-mobile-nav">
           REGISTRY/RVSP</a
         >
       </li>

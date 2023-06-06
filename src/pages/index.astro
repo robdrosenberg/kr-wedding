@@ -11,6 +11,9 @@ import "../styles/styles.css";
 import KRLogo from "../components/KRLogo.astro";
 
 import mobileNavBg from "../../public/images/hero/hero-mobile-nav-bg.jpg";
+import { inject } from '@vercel/analytics';
+
+inject();
 ---
 
 <head>
@@ -29,7 +32,7 @@ import mobileNavBg from "../../public/images/hero/hero-mobile-nav-bg.jpg";
       <KRLogo />
       <a
         href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp"
-        class="font-gothic-w text-sm underline decoration-green-dark underline-offset-8 hover:decoration-black"
+        class="b1 font-gothic-w underline decoration-green-dark hover:decoration-black underline-offset-8"
         >RVSP</a
       >
     </div>

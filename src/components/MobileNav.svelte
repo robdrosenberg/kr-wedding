@@ -1,5 +1,6 @@
 <script>
   import MobileMenu from "./MobileMenu.svelte";
+  import CloseIcon from "../components/CloseIcon.svelte"
   import { fade } from "svelte/transition";
 
   let openMenu = false;
@@ -32,14 +33,19 @@
   {#if !openMenu}
     <a
       href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp"
-      class="text-sm uppercase underline decoration-green-dark underline-offset-8"
+      class="uppercase underline decoration-green-dark underline-offset-8 b1"
       transition:fade>RVSP</a
     >
   {/if}
   <button
-    class="h-min text-sm uppercase underline decoration-green-dark underline-offset-8"
+    class="h-min b1 uppercase underline decoration-green-dark underline-offset-8 flex gap-2 items-center"
     on:click={toggle}
   >
-    Menu
+    {#if openMenu}
+      CLOSE
+      <CloseIcon />
+    {:else}
+      MENU
+    {/if}
   </button>
 </div>
