@@ -1,0 +1,24 @@
+---
+const { bg, text, link } = Astro.props;
+---
+
+<div
+  class=`relative    md:hidden mt-14`
+  data-aos="fade-up"
+  data-aos-duration="500"
+>
+  <img class="absolute z-0 h-full w-full object-cover" src={bg} />
+  <div class="absolute z-10 h-full w-full bg-black bg-opacity-50"></div>
+
+  <a href={link}>
+    <div
+      class="relative z-10 flex flex-wrap justify-between gap-2 px-5 pb-14 pt-10 text-white"
+    >
+      <p class="text-sm uppercase">NEXT</p>
+      <div class="flex items-center gap-5">
+        <span class="font-mack text-4xl font-bold uppercase">{text}</span>
+        <img src="/images/arrow-white.svg" alt="arrow" />
+      </div>
+    </div>
+  </a>
+</div>

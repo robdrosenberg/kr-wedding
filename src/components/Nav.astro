@@ -17,6 +17,10 @@ const links = [
     slug: "/register",
   },
 ];
+
+const currentPath = Astro.url.pathname;
+
+console.log(currentPath, links[0].slug);
 ---
 
 <div
@@ -28,18 +32,53 @@ const links = [
   <div class="b1 flex flex-col justify-between gap-20">
     {
       links.map((link) => (
-        <a class="-rotate-90 uppercase" href={`${link.slug}`}>
-          {link.name}
+        <a
+          class={` relative h-min -rotate-90 uppercase  `}
+          href={`${link.slug}`}
+        >
+          <span
+            class={`${
+              currentPath === link.slug ? "active" : ""
+            } link relative ${
+              currentPath === link.slug
+                ? "  underline decoration-green-darkest underline-offset-8"
+                : ""
+            }  hover:underline hover:decoration-green-darkest hover:underline-offset-8 `}
+          >
+            {link.name}
+          </span>
         </a>
       ))
     }
   </div>
-  <!-- <div class="b1 flex flex-col justify-between gap-20">
-    <a href="/" class="-rotate-90 uppercase">Home</a>
-    <a href="/details" class="-rotate-90 uppercase">Details</a>
-    <a href="/travel" class="-rotate-90 uppercase">travel</a>
-    <a href="/register" class="-rotate-90 uppercase">register
-    <span class="mx-1">/</span>rsvp</a>
-  </div> -->
+
   <span class="b2">26</span>
 </div>
+
+<style>
+  .link:hover:after {
+    content: "";
+    background-color: black;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .active::after {
+    content: "";
+    background-color: black;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>

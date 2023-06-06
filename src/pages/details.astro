@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import MobileNav from "../components/MobileNav.svelte";
+import MobileFooterNav from "../components/MobileFooterNav.astro";
 
 import Details from "../components/Details/index.astro";
 
@@ -41,4 +42,9 @@ import KRLogo from "../components/KRLogo.astro";
     data-aos-duration="500"
   /> -->
   </div>
+  <MobileFooterNav
+    text="Travel"
+    link="/travel"
+    bg="/images/details/details-mobile-nav-bg.jpg"
+  />
 </MainLayout>
