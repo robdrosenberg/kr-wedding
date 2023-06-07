@@ -68,7 +68,7 @@ html {
 }
 
 .rsvp-text {
-  -webkit-text-stroke: 1.25px #ffffff;
+  -webkit-text-stroke: .8px #ffffff;
   -webkit-text-fill-color: #313632;
   letter-spacing: 2%;
   /* line-height: 100px; */
@@ -86,6 +86,11 @@ html {
   -webkit-text-stroke: 1.2px #B7BDB8;
   -webkit-text-fill-color: #313632;
   box-sizing: border-box;
+}
+
+.footer-nav-text {
+  -webkit-text-stroke: .75px #313632;
+  -webkit-text-fill-color: #fdfdfd;
 }
 
 @media only screen and (max-width: 768px) {

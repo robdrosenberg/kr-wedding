@@ -33,6 +33,7 @@
   {#if !openMenu}
     <a
       href="https://www.zola.com/wedding/matuskarosenbergwedding/rsvp"
+      target="_blank"
       class="uppercase underline decoration-green-dark underline-offset-8 b1"
       transition:fade>RVSP</a
     >
